@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/payment.css">
+    <title>Pedido - Starburguers</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Pagamento</h1>
+            <img src="assets/logo.svg" alt="">
+        </header>
+        <section>
+            <span>Total a pagar</h1>
+            <h1 id="total">R$ 0,00</h1>
+            <img src="assets/Group 9.svg" alt="">
+            <p>Aproxime, insira ou passe o cartão.</p>
+        </section>
+        <footer>
+            <a href="checkout.html" class="secondary">Cancelar</a>
+        </footer>
+    </main>
+    <div id="fade" class="success hide-cont">
+        <div id="modal" class="modal hide">
+            <img src="assets/success.svg" alt="">
+            <h1>Obrigado! :)</h1>
+            <p>Seu pagamento foi aprovado. <br> Seu pedido já está sendo preparado. <br><br>Obrigado por comprar na Starburguers! Volte sempre.</p>
+            <a id="home" href="index.html" class="primary">Fechar</a>
+        </div>
+    </div>
+    <script src="js/payment.js"></script>
+</body>
+</html>

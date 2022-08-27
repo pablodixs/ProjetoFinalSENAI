@@ -1,0 +1,54 @@
+:root {
+    --green: rgb(0, 112, 69);
+    --light-green:  rgb(212, 233, 226);
+    --black: rgb(30, 30, 30);
+    --light-grey: rgb(245, 245, 245);
+    --defaut-size: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html, body, :root {
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary {
+    background-color: var(--light-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: .5rem 2rem;
+    color: var(--black);
+    font-weight: 500;
+    font-size: var(--defaut-size);
+    border-radius: 3.125rem;
+    border: 2px solid var(--light-green);
+}
+
+.secondary {
+    color: white;
+    font-size: var(--defaut-size);
+    border-radius: 3.125rem;
+    border: 2px solid white;
+    padding: .5rem 2rem;
+}
+
+.tertiary {
+    color: var(--light-green);
+    display: block;
+    text-align: center;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="order.css">
+    <title>Pedido - Starburguers</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Lanches</h1>
+            <img src="../assets/logo.svg" alt="">
+        </header>
+        <section>
+            <h1>Clique em um item para adiciona-lo à sacola</h1>
+            <div id="misto" class="card">
+                <div>
+                    <h1>Misto-quente</h1>
+                    <p>Pão, presunto e queijo</p>
+                    <h1>R$ 4,00</h1>
+                </div>
+                <div class="buttons">
+                    <button class="btn-adc" id="dmMisto">-</button>
+                    <input class="qnt" id="qntMisto" type="number" placeholder="0">
+                    <button class="btn-adc" id="aumMisto">+</button>
+                </div>
+                <img src="../assets/lanches/mistoquent.png" alt="">
+            </div>
+            <div id="bomba" class="card">
+                <div>
+                    <h1>Bomba</h1>
+                    <p>Pão, hamburguer, salsicha, p resunto, queijo, ovo, alface e tomate </p>
+                    <h1>R$ 8,00</h1>
+                </div>
+                <div class="buttons">
+                    <button class="btn-adc" id="dmBomba">-</button>
+                    <input class="qnt" id="qntBomba" type="number" placeholder="0">
+                    <button class="btn-adc" id="aumBomba">+</button>
+                </div>
+                <img src="../assets/lanches/bomba.png" alt="">
+            </div>
+            <div id="xtudo" class="card">
+                <div>
+                    <h1>X-Tudo</h1>
+                    <p>Pao, hamburger, presunto, queijo, ovo, batata-palha, milho e bacon</p>
+                    <h1>R$ 17,00</h1>
+                </div>
+                <div class="buttons">
+                    <button class="btn-adc" id="dmXTudo">-</button>
+                    <input class="qnt" id="qntXTudo" type="number" placeholder="0">
+                    <button class="btn-adc" id="aumXTudo">+</button>
+                </div>
+                <img src="../assets/lanches/xtudo.png" alt="">
+            </div>
+            <div id="xtudofrango" class="card">
+                <div>
+                    <h1>X-Tudo de Frango</h1>
+                    <p>Pao, peito de frango, presunto, queijo, ovo, batata-palha, milho e bacon</p>
+                    <h1>R$ 19,00</h1>
+                </div>
+                <div class="buttons">
+                    <button class="btn-adc" id="dmFrango">-</button>
+                    <input class="qnt" id="qntFrango" type="number" placeholder="0">
+                    <button class="btn-adc" id="aumFrango">+</button>
+                </div>
+                <img src="../assets/lanches/xtudo-frango.png" alt="">
+            </div>
+            <div id="xbrocadao" class="card">
+                <div>
+                    <h1>X-Brocadão</h1>
+                    <p>Pao, 2 hamburgueres, presunto, queijo, ovo, batata-palha, milho e bacon</p>
+                    <h1>R$ 25,00</h1>
+                </div>
+                <div class="buttons">
+                    <button class="btn-adc" id="dmBrocadao">-</button>
+                    <input class="qnt" id="qntBrocadao" type="number" placeholder="0">
+                    <button class="btn-adc" id="aumBrocadao">+</button>
+                </div>
+                <img src="../assets/lanches/xbrocadao.png" alt="">
+            </div>
+        </section>
+        <footer>
+            <div>
+                <span>TOTAL</span>
+                <h1 class="h1-total">R$<input type="text" id="total" disabled placeholder="0,00"></h1>
+            </div>
+            <div>
+                <a id="cancelButton" class="secondary">Cancelar</a>
+                <a id="checkout" href="bebidas.html" class="primary">Próximo</a>
+            </div>
+        </footer>
+    </main>
+    <div class="modal-cancel hide">
+        <h1>Tem certeza que deseja cancelar?</h1>
+        <a id="continue" class="primary continue">Continuar</a>
+        <a id="close" href="#" class="primary danger">Cancelar Pedido</a>
+    </div>
+    <div class="contrast hide-contrast"></div>
+    <script src="../js/lanches.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="order.css">
+    <title>Pedido - Starburguers</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Bebidas</h1>
+            <img src="../assets/logo.svg" alt="">
+        </header>
+        <section>
+            <a href="lanches.html" class="primary pages"><img src="../assets/back.svg" alt=""> Voltar</a>
+            <h1>Clique em um item para adiciona-lo à sacola</h1>
+            <div class="card">
+                <div>
+                    <h1>Refrigerante Lata</h1>
+                    <p>350ml</p>
+                    <h1>R$ 5,00</h1>
+                </div>
+                <div class="buttons">
+                    <button class="btn-adc" id="dmRefri">-</button>
+                    <input class="qnt" id="qntRefri" type="number" placeholder="0">
+                    <button class="btn-adc" id="aumRefri">+</button>
+                </div>
+                <img src="../assets/lanches/bebidas.png" alt="">
+            </div>
+            <div class="card">
+                <div>
+                    <h1>Heineken Long Neck</h1>
+                    <p>330ml</p>
+                    <h1>R$ 8,00</h1>
+                </div>
+                <div class="buttons">
+                    <button class="btn-adc" id="dmHein">-</button>
+                    <input class="qnt" id="qntHein" type="number" placeholder="0">
+                    <button class="btn-adc" id="aumHein">+</button>
+                </div>
+                <img src="../assets/lanches/hein.png" alt="">
+            </div>
+            <div class="card">
+                <div>
+                    <h1>Suco Natural</h1>
+                    <p>400ml</p>
+                    <h1>R$ 6,00</h1>
+                </div>
+                <div class="buttons">
+                    <button class="btn-adc" id="dmSuco">-</button>
+                    <input class="qnt" id="qntSuco" type="number" placeholder="0">
+                    <button class="btn-adc" id="aumSuco">+</button>
+                </div>
+                <img src="../assets/lanches/suco.png" alt="">
+            </div>
+        </section>
+        <footer>
+            <div>
+                <span>TOTAL</span>
+                <h1 class="h1-total">R$<input type="text" id="total" disabled placeholder="0,00"></h1>
+            </div>
+            <div>
+                <a id="cancelButton" class="secondary">Cancelar</a>
+                <a id="checkout" href="../checkout.html" class="primary">Próximo</a>
+            </div>
+        </footer>
+    </main>
+    <div class="modal hide">
+        <h2>Selecione pelo menos um item!</h2>
+    </div>
+    <div class="modal-cancel hide">
+        <h1>Tem certeza que deseja cancelar?</h1>
+        <a id="continue" class="primary continue">Continuar</a>
+        <a id="close" href="#" class="primary danger">Cancelar Pedido</a>
+    </div>
+    <div class="contrast hide-contrast"></div>
+    <script src="../js/bebidas.js"></script>
+</body>
+</html>
