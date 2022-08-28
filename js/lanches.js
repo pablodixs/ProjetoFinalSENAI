@@ -108,7 +108,7 @@ quantidadeBrocadao = dmBrocadao.addEventListener('click', () => {
     return valorFinalBrocadao;
 })
 
-//
+// Modal
 
 const cancelButton = document.getElementById('cancelButton');
 const cancelModal = document.querySelector('.modal-cancel');
@@ -130,7 +130,7 @@ continueModal.addEventListener('click', () => {
     cancelOverlay.classList.add('hide-contrast')
 })
 
-// Armazena o valor
+// Armazena as quantidades e valores
 
 setInterval(
     function atualizaValor() {
@@ -140,6 +140,13 @@ setInterval(
         let totalItens = Number(qntMisto.value) + Number(qntBomba.value) + Number(qntXTudo.value) + Number(qntFrango.value) + Number(qntBrocadao.value)
         
         sessionStorage.setItem('valor-lanche', soma)
-        sessionStorage.setItem('itens-lanche', totalItens)   
+        sessionStorage.setItem('itens-lanche', totalItens)
+
+        // Armazena os itens pedidos
+        sessionStorage.setItem('quantidade-misto', qntMisto.value)
+        sessionStorage.setItem('quantidade-bomba', qntBomba.value)
+        sessionStorage.setItem('quantidade-xtudo', qntXTudo.value)
+        sessionStorage.setItem('quantidade-frango', qntFrango.value)
+        sessionStorage.setItem('quantidade-brocado', qntBrocadao.value)
     }, 100
 )

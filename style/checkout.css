@@ -34,25 +34,30 @@ section {
 
 .card {
     position: relative;
-    height: 170px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 3px solid var(--green);
     border-radius: 10px;
     padding: 2rem;
-    padding-right: 1rem;
     margin-top: 2rem;
 }
 
 .card h1 {
-    font-size: 1.75rem;
+    display: inline;
 }
 
-.card p {
-    font-size: 1.125rem;
-    color: grey;
-    margin-bottom: 1rem;
+.quantidade {
+    font-size: 1.75rem;
+    color: var(--green);
+    font-weight: 400;
+}
+
+.lanche {
+    margin-left: 1rem;
+    color: var(--black);
+    font-weight: 500;
 }
 
 header {
@@ -107,4 +112,88 @@ footer span {
 
 footer h1 {
     font-size: 3.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.modal {
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--black);
+    color: var(--light-green);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem;
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all ease 300ms;
+}
+
+#close, #continue {
+    padding: 1rem;
+    width: 100%;
+}
+
+#continue {
+    background-color: var(--green);
+    border: 3px solid var(--green);
+    color: white;
+
+}
+
+.danger {
+    background-color: transparent;
+    border: 3px solid rgb(214, 16, 16);
+    color: rgb(214, 16, 16);
+}
+
+.modal-cancel {
+    position: fixed;
+    width: 60%;
+    height: 30%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1000;
+    background-color: var(--light-grey);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    visibility: visible;
+    opacity: 1; 
+    transition: all ease 300ms;
+}
+
+.contrast {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 1;
+    transition: all ease 100ms;
+}
+
+.hide {
+    visibility: hidden;
+    transform: translateY(70%);
+    opacity: 0;
+}
+
+.hide-contrast {
+    visibility: hidden;
+    opacity: 0;
 }

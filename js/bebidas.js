@@ -105,8 +105,15 @@ setInterval(
         sessionStorage.setItem('valor-bebidas', soma)
         sessionStorage.setItem('itens-bebidas', totalItens)
 
-        const checkout = document.getElementById('checkout');
+        // Armazena as quantidades
 
+        sessionStorage.setItem('quantidade-Refri', qntRefri.value)
+        sessionStorage.setItem('quantidade-Hein', qntHein.value)
+        sessionStorage.setItem('quantidade-Suco', qntSuco.value)
+
+        // Modal
+
+        const checkout = document.getElementById('checkout');
 
         if(lanchesNum > 0 || totalItens > 0) {
             checkout.classList.remove('disabled')

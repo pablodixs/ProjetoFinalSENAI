@@ -19,13 +19,61 @@
         <section>
             <a href="order/bebidas.html" class="primary pages"><img src="../assets/back.svg" alt=""> Voltar</a>
             <h1>Confira os itens do seu carrinho</h1>
-            <div class="card">
+            <div class="card card1 hide">
                 <div>
-                    <h1>Misto-quente</h1>
-                    <p>Pão, presunto e queijo</p>
-                    <h1>R$ 4,00</h1>
+                    <h1 class="quantidade" id="quantidade1"></h1>
+                    <h1 class="lanche" id="lanche1"></h1>
                 </div>
-                <img src="../assets/lanches/mistoquent.png" alt="">
+                <h1 class="totalItem" id="totalItem1"></h1>
+            </div>
+            <div class="card card2 hide">
+                <div>
+                    <h1 class="quantidade" id="quantidade2"></h1>
+                    <h1 class="lanche" id="lanche2"></h1>
+                </div>
+                <h1 class="totalItem" id="totalItem2"></h1>
+            </div>
+            <div class="card card3 hide">
+                <div>
+                    <h1 class="quantidade" id="quantidade3"></h1>
+                    <h1 class="lanche" id="lanche3"></h1>
+                </div>
+                <h1 class="totalItem" id="totalItem3"></h1>
+            </div>
+            <div class="card card4 hide">
+                <div>
+                    <h1 class="quantidade" id="quantidade4"></h1>
+                    <h1 class="lanche" id="lanche4"></h1>
+                </div>
+                <h1 class="totalItem" id="totalItem4"></h1>
+            </div>
+            <div class="card card5 hide">
+                <div>
+                    <h1 class="quantidade" id="quantidade5"></h1>
+                    <h1 class="lanche" id="lanche5"></h1>
+                </div>
+                <h1 class="totalItem" id="totalItem5"></h1>
+            </div>
+            <div class="card card6 hide">
+                <div>
+                    <h1 class="quantidade" id="quantidade6"></h1>
+                    <h1 class="lanche" id="lanche6"></h1>
+                </div>
+                <h1 class="totalItem" id="totalItem6"></h1>
+            </div>
+            <div class="card card7 hide">
+                <div>
+                    <h1 class="quantidade" id="quantidade7"></h1>
+                    <h1 class="lanche" id="lanche7"></h1>
+                </div>
+                <h1 class="totalItem" id="totalItem7"></h1>
+            </div>
+            <div class="card card8 hide">
+                <div>
+                    <h1 class="quantidade" id="quantidade8"></h1>
+                    <h1 class="lanche" id="lanche8"></h1>
+                </div>
+                <h1 class="totalItem" id="totalItem8"></h1>
             </div>
         </section>
         <footer>
@@ -36,11 +84,17 @@
                 <h1 id="total">0,00</h1>
             </div>
             <div>
-                <a href="../index.html" class="secondary">Cancelar</a>
-                <a href="../payment.html" class="primary">Pagar</a>
+                <a id="cancelButton" class="secondary">Cancelar</a>
+                <a href="payment.html" class="primary">Pagar</a>
             </div>
         </footer>
     </main>
+    <div class="modal-cancel hide">
+        <h1>Tem certeza que deseja cancelar?</h1>
+        <a id="close" href="../index.html" class="primary danger">Cancelar Pedido</a>
+        <a id="continue" class="primary continue">Continuar</a>
+    </div>
+    <div class="contrast hide-contrast"></div>
     <script src="js/checkout.js"></script>
 </body>
 </html>
