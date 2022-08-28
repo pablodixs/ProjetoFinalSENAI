@@ -122,8 +122,7 @@ cancelButton.addEventListener('click', () => {
 })
 
 closeModal.addEventListener('click', () => {
-    cancelModal.classList.add('hide')
-    cancelOverlay.classList.add('hide-contrast')
+    sessionStorage.clear()
 })
 
 continueModal.addEventListener('click', () => {
@@ -144,9 +143,3 @@ setInterval(
         sessionStorage.setItem('itens-lanche', totalItens)   
     }, 100
 )
-
-// Limpa o sessionStorage
-
-cancel.onclick = () => {
-    sessionStorage.clear()
-}

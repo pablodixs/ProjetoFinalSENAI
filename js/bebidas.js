@@ -7,6 +7,7 @@ let lanchesNum = Number.parseFloat(lanches)
 total.value = lanches
 
 // Refri
+
 let valorFinalRefri = 0;
 
 const qntRefri = document.getElementById('qntRefri');
@@ -84,8 +85,7 @@ cancelButton.addEventListener('click', () => {
 })
 
 closeModal.addEventListener('click', () => {
-    cancelModal.classList.add('hide')
-    cancelOverlay.classList.add('hide-contrast')
+    sessionStorage.clear()
 })
 
 continueModal.addEventListener('click', () => {
@@ -125,7 +125,3 @@ setInterval(
 
     }, 100
 )
-
-cancel.onclick = () => {
-    sessionStorage.clear()
-}   

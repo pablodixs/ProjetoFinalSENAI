@@ -190,6 +190,18 @@ footer h1 {
     transition: all ease 300ms;
 }
 
+#close, #continue {
+    padding: 1rem;
+    width: 100%;
+}
+
+#continue {
+    background-color: var(--green);
+    border: 3px solid var(--green);
+    color: white;
+
+}
+
 .danger {
     background-color: transparent;
     border: 3px solid rgb(214, 16, 16);
@@ -198,7 +210,7 @@ footer h1 {
 
 .modal-cancel {
     position: fixed;
-    width: 50%;
+    width: 60%;
     height: 30%;
     top: 0;
     right: 0;
@@ -240,4 +252,45 @@ footer h1 {
 .hide-contrast {
     visibility: hidden;
     opacity: 0;
+}
+
+
+@media (max-width: 700px) {
+    .card img {
+        display: none;
+    }
+
+    .card div:first-child {
+        width: 60%;
+    }
+
+    .modal-cancel {
+        width: 80%;
+        height: 40%;
+    }
+}
+
+@media (max-width: 530px) {
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+        height: auto;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        display: block;
+    }
+
+    footer {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .modal-cancel {
+        width: 80%;
+        height: 40%;
+    }
 }
