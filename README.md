@@ -2,7 +2,7 @@
 ### Projeto Final SENAI
 Projeto de conclusão de curso de Desenvolvedor Front-End.
 
-Fazer um sistema de um totem para uma lanchonete onde o usuário irá escolher lanches
+- Fazer um sistema de um totem para uma lanchonete onde o usuário irá escolher lanches
 disponíveis na lanchonete e bebidas.
 
 #### Requisitos
