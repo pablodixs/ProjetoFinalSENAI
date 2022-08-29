@@ -10,7 +10,6 @@ const modal = document.getElementById('modal');
 const contraste = document.getElementById('fade');
 
 setTimeout(function showModal() {
-    console.log('Teste')
     modal.classList.remove('hide')
     contraste.classList.remove('hide-cont')
 }, 5000)
