@@ -44,6 +44,11 @@ section {
     margin-top: 2rem;
 }
 
+.card > div {
+    display: flex;
+    align-items: center;
+}
+
 .card h1 {
     display: inline;
 }
@@ -58,6 +63,13 @@ section {
     margin-left: 1rem;
     color: var(--black);
     font-weight: 500;
+}
+
+.img-check {
+    width: 3.125rem;
+    height: 3.125rem;
+    object-fit: cover;
+    margin-right: 1rem;
 }
 
 header {
