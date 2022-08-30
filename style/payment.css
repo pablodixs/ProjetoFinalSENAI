@@ -159,3 +159,38 @@ section p {
     font-weight: 500;
     margin: 2rem 0;
 }
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+    }
+
+    header img {
+        display: none;
+    }
+
+    #total {
+        font-size: 3.5rem;
+    }
+
+    section img {
+        width: 90%;
+    }
+
+    .modal {
+        height: 80vh;
+    }
+
+    .modal img {
+        width: 90%;
+    }
+
+    .modal h1 {
+        font-size: 2rem
+    }
+
+    .modal p {
+        font-size: 1rem;
+    }
+
+}

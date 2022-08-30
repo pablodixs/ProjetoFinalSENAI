@@ -33,3 +33,14 @@ section > img {
 footer p {
     color: var(--light-green);
 }
+
+@media (max-width: 700px) {
+
+    header img {
+        width: 90%;
+    }
+
+    section > img {
+        width: 90%;
+    }
+}

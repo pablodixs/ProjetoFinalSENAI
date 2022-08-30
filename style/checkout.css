@@ -209,3 +209,41 @@ footer h1 {
     visibility: hidden;
     opacity: 0;
 }
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card > div {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    footer {
+        flex-direction: column;
+    }
+
+    footer span {
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    footer h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }    
+
+    footer .primary, .secondary {
+        padding: .5rem 1rem;
+    }
+}
